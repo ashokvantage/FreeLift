@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">FreeLift</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <!--<string name="googleapi_key">AIzaSyDZ23dlGskDABtxK3eG5yg6fW53477SvZs</string>-->
+    <string name="googleapi_key">AIzaSyBbKpSFqeU46hPQ0u6u7k3RW7tKsLBYIWU</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">2220185348207690</string>
+    <string name="action_settings">Settings</string>
+    <string name="account"><font fgcolor="white">ACCOUNT</font></string>
+    <string name="cart"><font fgcolor="white">CART</font></string>
+    <string name="order"><font fgcolor="white">ORDER</font></string>
+    <string name="categories"><font fgcolor="white">CATEGORIES</font></string>
+    <string name="recent"><font fgcolor="white">RECENTS</font></string>
+    <string name="featured"><font fgcolor="white">FEATURED</font></string>
+    <string name="all"><font fgcolor="white">ALL</font></string>
+    <string name="settings"><font fgcolor="white">SETTINGS</font></string>
+    <string name="logout"><font fgcolor="white">LOG OUT</font></string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="msg_loading_2">Loading. Please wait&#8230;</string>
+    <string name="action_login_with_facebook">Log in with Facebook</string>
+    <string name="action_signup_with_facebook">Sign up with Facebook</string>
+    <string-array name="reason_cancel_array">
+        <item>---Select reason of cancel---</item>
+        <item>Change the plan</item>
+        <item>Duplicate booking</item>
+        <item>Flight cancelled</item>
+        <item>Schedule change of business meeting</item>
+        <item>Change of business event place or date</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="reason_cancel_array_driver">
+        <item>---Select reason of cancel---</item>
+        <item>Problem with vehicle</item>
+        <item>Stuck in huge jam</item>
+        <item>Health issue</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

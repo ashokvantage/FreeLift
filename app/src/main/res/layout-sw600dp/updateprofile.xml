@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context="com.freelift.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp">
+
+                <com.pkmmte.view.CircularImageView
+                    android:id="@+id/img_pic"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/profilepic"
+                    app:border="true"
+                    app:border_color="#fff"
+                    app:border_width="1dp"
+                    app:shadow="true" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="First Name"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/edtfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Last Name"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/edtlname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:enabled="false"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Email Address"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="New password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textSize="20dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoComplete_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:ems="10"
+                    android:hint="Complete address"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/edt_c_code"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/edittextdesign"
+                        android:drawableRight="@drawable/dropdown"
+                        android:padding="10dp"
+                        android:text="+27"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/edtphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/edt_c_code"
+                        android:background="@drawable/edittextdesign"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/edt_emg_email1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="Emg. email to send email 1"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="20dp" />
+
+
+                <EditText
+                    android:id="@+id/edt_driving_licence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="Driving Licence No."
+                    android:inputType="textPhonetic"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edt_vehicle_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="Vehicle No."
+                    android:inputType="textPhonetic"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rb_ac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="A/C Taxi" />
+
+                    <RadioButton
+                        android:id="@+id/rbnonac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Non A/C Taxi" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffc000">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:text="SAVE"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

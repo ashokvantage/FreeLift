@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "507279422902",
+    "firebase_url": "https://freelift-82e45.firebaseio.com",
+    "project_id": "freelift-82e45",
+    "storage_bucket": "freelift-82e45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507279422902:android:1b81ec2409eeedb0",
+        "android_client_info": {
+          "package_name": "com.freelift"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507279422902-r69e17el5kk8ohkl44733vaj032vvcl4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freelift",
+            "certificate_hash": "91516535D11D18B761D700B4FBE0E2E851AE4D1F"
+          }
+        },
+        {
+          "client_id": "507279422902-00lqclmlfg4k2a9qifc0k372r2vfs12q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freelift",
+            "certificate_hash": "5D1B75226FDC91822BA9649CD84BF891AA79235E"
+          }
+        },
+        {
+          "client_id": "507279422902-dmljuvcjjrnotmm87neo5fsapfioe0vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnjKJs-Slmckc_60dIXQUWDlw0EC6cL2o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507279422902-dmljuvcjjrnotmm87neo5fsapfioe0vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

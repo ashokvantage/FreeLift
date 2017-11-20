@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RIDE"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#ccc"/>
+
+        <TextView
+            android:id="@+id/txtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nearest Taxi driver will contact you soon"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEBF00"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FEBF00"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="CLOSE" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

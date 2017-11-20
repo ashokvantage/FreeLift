@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context="com.freelift.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlgplush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/txtcenter"
+                    android:background="#FFFFFF">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#df4a32">
+
+                        <com.google.android.gms.common.SignInButton
+                            android:id="@+id/sign_in_button"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true" />
+
+                        <ImageView
+                            android:id="@+id/imggplush"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/gplush" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="40dp"
+                            android:padding="10dp"
+                            android:text="Google Plus"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtcenter"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rlfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtcenter"
+                    android:background="#3b5999">
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="30dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgfb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/fb" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:padding="10dp"
+                        android:text="Facebook"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/txtcenter2"
+                    android:background="#000" />
+
+                <TextView
+                    android:id="@+id/txtcenter2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:text="or"
+                    android:textColor="#000000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txtcenter2"
+                    android:background="#000" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/registration_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:checked="false"
+                    android:text="Passenger"
+                    android:textOff=""
+                    android:textOn=""
+                    android:theme="@style/MySwitch"
+                    app:showText="true" />
+            </RelativeLayout>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <CheckBox
+                    android:id="@+id/registration_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Im a Driver"
+                    android:visibility="gone"/>
+                <RadioGroup
+                    android:id="@+id/radiogroup_registertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radio_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Passenger"
+                        android:paddingLeft="10dp"
+                        android:checked="false"/>
+                    <RadioButton
+                        android:id="@+id/radio_driver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driver"
+                        android:paddingLeft="10dp"
+                        android:checked="true"
+                        android:layout_marginLeft="40dp"/>
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="First Name"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:padding="10dp"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edtlname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="Last Name"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:padding="10dp"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="13dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoComplete_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:ems="10"
+                    android:hint="Complete Address"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="13dp">
+
+                </AutoCompleteTextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/edt_c_code"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/edittextdesign"
+                        android:drawableRight="@drawable/dropdown"
+                        android:padding="10dp"
+                        android:text="+27"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/edtphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/edt_c_code"
+                        android:background="@drawable/edittextdesign"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/edt_emg_email1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="Emergency Email 1"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_driving_licence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/img_licence"
+                        android:background="@drawable/edittextdesign"
+                        android:hint="Driving Licence No."
+                        android:inputType="textPhonetic"
+                        android:padding="10dp"
+                        android:textAllCaps="true"
+                        android:textSize="13dp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_licence"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:adjustViewBounds="true"
+                        android:visibility="gone"
+                        android:background="@drawable/takephoto"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_vehicle_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@+id/img_vehicle_no"
+                        android:background="@drawable/edittextdesign"
+                        android:hint="Vehicle No."
+                        android:inputType="textPhonetic"
+                        android:padding="10dp"
+                        android:textAllCaps="true"
+                        android:textSize="13dp"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/img_vehicle_no"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:background="@drawable/takephoto" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edtpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextdesign"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:padding="10dp"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/rb_ac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="A/C Taxi" />
+
+                    <RadioButton
+                        android:id="@+id/rbnonac"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Non A/C Taxi" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I accept the"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" terms &amp; conditions"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffc000">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="10dp"
+                        android:text="Register"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

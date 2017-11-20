@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/rl_start">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete_source_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextdesign"
+                android:ems="10"
+                android:hint="Source address"
+                android:padding="7dp"
+                android:singleLine="true">
+
+            </AutoCompleteTextView>
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete_dest_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/autoComplete_source_add"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextdesign"
+                android:ems="10"
+                android:hint="Destination address"
+                android:padding="7dp"
+                android:singleLine="true"></AutoCompleteTextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_start"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignBottom="@+id/rl_input"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#0000ff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="Start"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/mapp"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="Driver not found at this location yet."
+            android:textColor="#d60a0a"
+            android:textSize="13dp"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:id="@+id/rlreportemergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+           android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Emergency"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:padding="7dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
